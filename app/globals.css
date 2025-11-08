@@ -1,0 +1,121 @@
+@import "tailwindcss";
+/* 
+body {
+  background: radial-gradient(at 10% 20%, #1e1e1e, transparent 60%),
+    radial-gradient(at 80% 70%, #111111, transparent 60%),
+    radial-gradient(at 50% 50%, #000000, transparent 60%);
+  background-color: #0b0b0b;
+  animation: meshMove 30s ease infinite;
+} */
+
+
+body {
+  background: radial-gradient(at 10% 20%, #222831, transparent 50%),
+    radial-gradient(at 80% 10%, #1a1a2e, transparent 50%),
+    radial-gradient(at 70% 90%, #16213e, transparent 50%),
+    radial-gradient(at 30% 80%, #042247, transparent 50%);
+  background-size: 200% 200%;
+  animation: meshMove 20s ease infinite;
+  background-color: #0b0b0b;
+  min-height: 100vh;
+  color: white;
+}
+
+@keyframes meshMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+  /* @keyframes meshMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+
+#dna {
+  position: absolute;
+  @apply  overflow-x-hidden -z-30;
+  top: 50%;
+  left: 50%;
+  /* @apply w-screen overflow-hidden; */
+  height: 240px;
+  margin-top: -120px;
+  margin-left: -400px;
+  perspective: 1000px;
+}
+
+#dna div {
+  position: relative;
+  
+  top: 50%;
+  left: 60px;
+  width: 2px;
+  height: 160px;
+  margin-top: -80px;
+  background-color: rgba(255, 255, 255, 0.1);
+  float: left;
+  transform-style: preserve-3d;
+  margin-left: 20px;
+  animation: rotation 4s linear infinite;
+}
+
+#dna div::before,
+#dna div::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  height: 10px;
+  background-color: white;
+  border-radius: 5px;
+  animation: rotation 4s linear infinite reverse;
+  z-index: 1;
+}
+
+#dna div::before {
+  top: -10px;
+}
+
+#dna div::after {
+  bottom: -10px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(359deg);
+  }
+}
+
+/* Generate animation delays for each div (simulate LESS loop) */
+#dna div:nth-child(1) { animation-delay: -59.85s; }
+#dna div:nth-child(2) { animation-delay: -59.7s; }
+#dna div:nth-child(3) { animation-delay: -59.55s; }
+#dna div:nth-child(4) { animation-delay: -59.4s; }
+#dna div:nth-child(5) { animation-delay: -59.25s; }
+/* ... continue pattern ... */
+#dna div:nth-child(30) { animation-delay: -55.5s; }
+
+#dna div:nth-child(1)::before,
+#dna div:nth-child(1)::after { animation-delay: -59.85s; }
+#dna div:nth-child(2)::before,
+#dna div:nth-child(2)::after { animation-delay: -59.7s; }
+/* repeat for others */
+
