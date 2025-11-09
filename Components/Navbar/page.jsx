@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { FiMail, FiMenu, FiX } from "react-icons/fi";
+import { SiZulip } from "react-icons/si";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,13 +20,7 @@ export default function Navbar() {
     <nav className=" top-0 left-0 w-full h-20 flex items-center justify-between px-14 md:px-24 py-24  backdrop-blur-md text-white z-50">
       {/* Left: Logo + Name */}
       <div className="flex items-center space-x-3">
-        <Image
-          src="/comma.png"
-          alt="Logo"
-          width={40}
-          height={40}
-          className="rounded-full"
-        />
+        <SiZulip size={22} className=" bg-black  round-full textcyan-400" />
         <span className="font-semibold text-lg tracking-wide uppercase">
           Muhammad Zubair
         </span>

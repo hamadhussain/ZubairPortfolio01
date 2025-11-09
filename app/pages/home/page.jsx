@@ -23,7 +23,7 @@ const Home = () => {
       </div>
 
       {/* Info Section */}
-      <div className="mt7 flex flex-col md:flex-row items-center absolute bottom-10 md:items-start justify-between gap-6 md:gap-16 w-full px-9 ">
+      <div className="mt7 flex flex-col px-14 md:px-24 py-24 md:flex-row items-center absolute bottom-10 md:items-start justify-between gap-6 md:gap-16 w-full  ">
         
         {/* Left Side */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-3">
@@ -42,7 +42,7 @@ const Home = () => {
         </div>
 
         {/* Right Side */}
-        <div className="flex flex-col items-end justify-center  shadow-md rounded-xl p-6 w-full md:w-1/3 ">
+        <div className="flex flex-col items-end justify-center  rounded-xl p-6 w-full md:w-1/3 ">
         <div className=" flex">
                     <VscStarFull className="text-yellow-400 text-3xl" />
           <VscStarFull className="text-yellow-400 text-3xl" />
