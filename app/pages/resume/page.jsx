@@ -10,7 +10,7 @@ const Resume = () => {
     <div className="px-6 sm:px-10 md:px-24 py-16 md:py-24 ">
       {/* Breadcrumb Section */}
       <div>
-        <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-5 text-lg sm:text-xl md:text-2xl text--800">
+        <div className="flex flex-wrap items-center  md:justify-start gap-3 md:gap-5 text-lg sm:text-xl md:text-2xl text--800">
           <span className="font-medium hover:text-indigo-600 transition-colors cursor-pointer">
             Home
           </span>
@@ -19,13 +19,12 @@ const Resume = () => {
         </div>
 
         {/* Heading Section */}
-        <h2 className="mt-8 text-center md:text-left text-2xl sm:text-3xl md:text-5xl font-bold text--900">
+        <h2 className="mt-8  md:text-left text-2xl sm:text-3xl md:text-5xl font-bold text--900">
           My Resume
         </h2>
       </div>
-
-  <div className="  flex  justify-between items-center mt-10  p-6 rounded-lg shadow-2xl">
-        <div className=" flex items-center gap-6">
+ <div className="  flex flex-wrap justify-between items-center mt-10  p-6 rounded-lg shadow-none md:shadow-2xl">
+        <div className=" flex  items-center gap-6">
           <Image
             src="/zubair.jpg"
             alt="Logo"

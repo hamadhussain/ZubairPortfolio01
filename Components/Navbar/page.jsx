@@ -63,7 +63,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute top-20 left-0 w-full  backdrop-blur-lg flex flex-col items-center space-y-6 py-8 text-lg md:hidden border-t border-white/10">
+        <div className="absolute top-0 left-0 w-full bg-black h-screen  backdrop-blur-lg flex flex-col p-5 space-y-6 py-8 text-lg md:hidden border-t border-white/10">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -79,11 +79,10 @@ export default function Navbar() {
             </Link>
           ))}
           <Link
-            href="/contact"
-            className="hover:text-cyan-400 transition uppercase flex items-center gap-2"
+            href="/pages/contact"
+            className={`hover:text-cyan-400 transition px-5 py-2 flex items-center gap-2 ${pathname === "/pages/contact" ? "bg-cyan-900 text-white rounded-full" : ""}`}
             onClick={() => setMenuOpen(false)}
           >
-            <FiMail size={20} />
             Contact
           </Link>
         </div>
