@@ -16,6 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/zubair.jpg"  className=" rounded-full"/>
+      </head>
       <body className={`${inter.variable} antialiased`}>
         <Navbar />
         {children}
