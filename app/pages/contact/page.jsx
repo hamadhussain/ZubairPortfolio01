@@ -42,7 +42,7 @@ const Resume = () => {
 <div className="flex items-end gap-4 mt-6 md:mt-0 justify-end">
           {/* Behance */}
           <Link
-        href="https://www.behance.net/yourprofile"
+        href="https://www.behance.net/muhammadzubair177"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 text-white transition-colors duration-200 group"
@@ -55,7 +55,7 @@ const Resume = () => {
 
       {/* LinkedIn */}
       <Link
-        href="https://www.linkedin.com/in/yourprofile"
+        href="https://www.linkedin.com/in/muhammad-zubair-37aa19304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 text-white transition-colors duration-200 group"
