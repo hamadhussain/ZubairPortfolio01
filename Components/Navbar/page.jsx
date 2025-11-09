@@ -17,8 +17,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className=" top-0 left-0 w-full h-20 flex items-center justify-between px-14 md:px-24 py-24  backdrop-blur-md text-white z-50">
-      {/* Left: Logo + Name */}
+    <nav className=" top-0 left-0 w-full h-20 flex items-center justify-between px-6 sm:px-8 md:px-24 py-24  backdrop-blur-md text-white z-50">
       <div className="flex items-center space-x-3">
         <SiZulip size={22} className=" bg-black  round-full textcyan-400" />
         <span className="font-semibold text-lg tracking-wide uppercase">
