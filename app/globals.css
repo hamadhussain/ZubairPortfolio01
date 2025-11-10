@@ -9,12 +9,40 @@ body {
 } */
 
 
-body {
+/* body {
   background: radial-gradient(at 10% 20%, #222831, transparent 50%),
     radial-gradient(at 80% 10%, #1a1a2e, transparent 50%),
     radial-gradient(at 70% 90%, #16213e, transparent 50%),
     radial-gradient(at 30% 80%, #042247, transparent 50%);
   background-size: 200% 200%;
+  animation: meshMove 20s ease infinite;
+  background-color: #0b0b0b;
+  min-height: 100vh;
+  color: white;
+}
+
+@keyframes meshMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+
+body {
+  background-image: 
+    url("/back.gif"),
+    radial-gradient(at 10% 20%, #222831, transparent 50%),
+    radial-gradient(at 80% 10%, #1a1a2e, transparent 50%),
+    radial-gradient(at 70% 90%, #16213e, transparent 50%),
+    radial-gradient(at 30% 80%, #042247, transparent 50%);
+  background-size: cover, 200% 200%, 200% 200%, 200% 200%, 200% 200%;
+  background-blend-mode: overlay;
   animation: meshMove 20s ease infinite;
   background-color: #0b0b0b;
   min-height: 100vh;
