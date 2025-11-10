@@ -6,10 +6,10 @@ import { VscStarFull } from "react-icons/vsc";
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-between text-white  px-4 md:px-10">
+    <div className="flex flex-col  items-center justify-center text-white  absolute w-screen  px-4 md:px-10">
       
       {/* Hero Section */}
-      <section className="flex flex-col justify-center items-center text-center space-y-4 py-24 md:py-32">
+      <section className="flex flex-col justify-center items-center text-center space-y-4   md:py-32">
         <p className="text-lg md:text-2xl font-medium px-4 py-2 border border-gray-700 rounded-full">
           Hello!
         </p>
@@ -30,7 +30,7 @@ const Home = () => {
       </section>
 
       {/* Info Section */}
-      <section className="flex flex-col md:flex-row items-center justify-between gap-10 w-full py-10 md:py-16 border-t border-gray-800">
+      <section className="flex flex-col md:flex-row items-center justify-between gap-10 w-full    border-gray-800">
         
         {/* Left Side */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4 md:w-2/3">
@@ -55,7 +55,7 @@ const Home = () => {
               <VscStarFull key={i} className="text-yellow-400 text-2xl md:text-3xl" />
             ))}
           </div>
-          <p className="text-2xl md:text-3xl font-semibold mt-2">5+ Years</p>
+          <p className="text-2xl md:text-3xl font-semibold mt-2">9+ Years</p>
           <p className="text-lg text-gray-400">Experience</p>
         </div>
       </section>
