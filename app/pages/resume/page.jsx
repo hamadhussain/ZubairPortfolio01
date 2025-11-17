@@ -282,7 +282,7 @@ bg: "bg-blue900",
 {
 id: 2,
 icon: <FiMail className="w-6 h-6 text-white" />,
-text: "bb3132361@gmail.com",
+text: "creativemuhammadzubair@gmail.com",
 bg: "bg-indigo900",
 },
 {
@@ -387,42 +387,36 @@ const ExperienceTimeline = () => {
       <h2 className="text-4xl font-extrabold mb-12 text-white ">
         Experience
       </h2>
+     <Image src="/zubairResume.png" alt="homepage" className=' h-screen w-1/2' width={1920} height={1080} />
 
-      <div className="space-y-12">
+      {/* <div className="space-y-12">
         {experienceData.map((item, index) => (
           <div
             key={index}
             className="grid grid-cols-[150px_20px_1fr] gap-x-6 relative"
           >
-            {/* Column 1: Dates */}
             <div className="col-start-1 text-right text-sm font-medium text-gray-400 pt-1">
               {item.period}
             </div>
 
-            {/* Column 2: Timeline Line and Marker */}
             <div className="col-start-2 relative">
-              {/* Vertical Line (hide only for last item) */}
               {index !== experienceData.length - 1 && (
                 <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px bg-gray-700"></div>
               )}
 
-              {/* Marker Dot */}
               <div
                 className={`relative z-10 w-4 h-4 rounded-full ${item.logoBg} border-2 border-gray-900 -translate-x-1/2 left-1/2`}
               ></div>
             </div>
 
-            {/* Column 3: Company and Description */}
             <div className="col-start-3 pb-8">
               <div className="flex items-start space-x-3 mb-4">
-                {/* Logo Circle */}
                 <div
                   className={`w-10 h-10 ${item.logoBg} rounded-lg flex items-center justify-center text-white text-lg font-bold p-1`}
                 >
                   {item.logoInitials}
                 </div>
 
-                {/* Company Info */}
                 <div>
                   <p className="text-xl font-bold text-white leading-snug">
                     {item.company}
@@ -433,7 +427,6 @@ const ExperienceTimeline = () => {
                 </div>
               </div>
 
-              {/* Tasks/Bullet Points */}
               <ul className="list-none space-y-2 mt-4">
                 {item.tasks.map((task, taskIndex) => (
                   <li key={taskIndex} className="flex items-start text-sm">
@@ -445,7 +438,7 @@ const ExperienceTimeline = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

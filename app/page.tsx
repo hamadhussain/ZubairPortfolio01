@@ -27,9 +27,11 @@
 
 import React from 'react'
 import HomeSection from './pages/home/page'
+import Image from 'next/image'
 const Home = () => {
   return (
     <div>
+     {/* <Image src="/zubairResume.png" alt="homepage" className=' h-screen w-1/2' width={1920} height={1080} /> */}
       <HomeSection/>
     </div>
   )

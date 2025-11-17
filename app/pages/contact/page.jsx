@@ -84,7 +84,7 @@ bg: "bg-blue900",
 {
 id: 2,
 icon: <FiMail className="w-6 h-6 text-white" />,
-text: "bb3132361@gmail.com",
+text: "creativemuhammadzubair@gmail.com",
 bg: "bg-indigo900",
 },
 {
