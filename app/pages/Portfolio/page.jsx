@@ -869,8 +869,9 @@ const FigmaEmbed = ({ url, index }) => {
 
 /* ---------------- MAIN PAGE ---------------- */
 export default function Portfolio() {
-  const [activeFolder, setActiveFolder] = useState("figma");
-  const [activeView, setActiveView] = useState("images");
+const [activeFolder, setActiveFolder] = useState("jpg");
+const [activeView, setActiveView] = useState("figma");
+
 
   const getFolderTitle = () => {
     if (activeFolder === "jpg") return "JPG Mockup";
